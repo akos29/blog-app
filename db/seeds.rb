@@ -2,12 +2,13 @@
 user = User.create!(
   name: 'Abebe',
   photo: 'https://i.pravatar.cc/300',
+  email: 'abebe@gmail.com',
   bio: 'Story of Abe\'s life ...'
 )
-second_user = User.create(name: 'Lilly', photo: 'https://i.pravatar.cc/300', bio: 'Teacher from Poland.')
-first_user = User.create(name: 'Tom', photo: 'https://i.pravatar.cc/300', bio: 'Teacher from Mexico.')
+second_user = User.create(name: 'Lilly', photo: 'https://i.pravatar.cc/300', bio: 'Teacher from Poland.',email: 'abebe@gmail.com')
+first_user = User.create(name: 'Tom', photo: 'https://i.pravatar.cc/300', bio: 'Teacher from Mexico.',email: 'abebe@gmail.com')
 
-first_post = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
+first_post = Post.create(author: first_user, title: 'Hello', text: 'This is my first post',email: 'abebe@gmail.com')
 second_post = Post.create(author: first_user, title: 'Hello world', text: 'This is my first post')
 third_post = Post.create(author: first_user, title: 'Hey there', text: 'This is my first post')
 fourth_post = Post.create(author: first_user, title: 'Hey there', text: 'This is my first post')
