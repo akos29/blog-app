@@ -7,13 +7,14 @@
   align-content: center;
 }
 
-.login-container form {
+#new_user {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 10px;
 }
 
-.login-container .field {
+#new_user .field {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,8 +22,7 @@
   align-items: center;
 }
 
-#user_email,
-#user_password {
+#new_user input {
   width: 100% !important;
 }
 

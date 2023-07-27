@@ -6,3 +6,10 @@
   </div>
   <%= f.submit "Add Comment" , class: 'btn' %>
 <% end %>
+
+
+  <% if flash[:success] %>
+    <div class="success">
+      <%= flash[:success] %>
+    </div>
+  <% end %>

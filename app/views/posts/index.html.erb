@@ -1,5 +1,13 @@
 <h1>Posts List</h1>
   <%= render partial: "shared/user", locals: { user: @user } %>
+  
+  <%= link_to 'Create New', new_user_post_path , class: 'btn' %>
+
+  <% if flash[:success] %>
+    <div class="alert alert-primary" role="alert">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
   <%= render "posts", posts: @posts %>
   <% @posts.each do |post| %>
     <div class='post-card'>
