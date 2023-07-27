@@ -7,14 +7,13 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+ 
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -58,12 +57,10 @@
 ### Key Features <a name="key-features"></a>
 
 - **Friendly interface**
-- **Manage User, Posts with respect to the comments and the likes**
 - **Data is preserved in PosgresSQL**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
 
 
 
@@ -83,7 +80,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-   git clone https://github.com/akos29/blog-ror/
+   git clone https://github.com/akos29/blog-app
 ```
 
 ### Install
@@ -91,7 +88,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd RubyCapstoneProject
+  cd blog-app
   bundle install
 ```
 
@@ -100,7 +97,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  ruby main.rb
+  rails s
 ```
 
 ### Run tests

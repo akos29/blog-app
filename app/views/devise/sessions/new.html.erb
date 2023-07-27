@@ -1,0 +1,16 @@
+<div class="container aligncontent-center" style="width: 500px; flex-direction:cloumn;align-content:center;" >
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), :class=> 'container aligncontent-centerr') do |f| %>
+    <div class="form-control-lg">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Username',:style=>'width:100%' %>
+    </div>
+
+    <div class="form-control-lg">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', :style=>'width:100%' %>
+    </div>
+    <div  class="form-control-lg" style="width:100%;">
+      <%= f.submit "Log in", :class=>'btn btn-success', :style=>'width:100%' %>
+    </div>
+  <% end %>
+
+</div>
