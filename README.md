@@ -57,7 +57,6 @@
 ### Key Features <a name="key-features"></a>
 
 - **Friendly interface**
-- **Manage User, Posts with respect to the comments and the likes**
 - **Data is preserved in PosgresSQL**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,7 +80,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-   git clone https://github.com/akos29/blog-ror/
+   git clone https://github.com/akos29/blog-app
 ```
 
 ### Install
@@ -89,7 +88,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd RubyCapstoneProject
+  cd blog-app
   bundle install
 ```
 
