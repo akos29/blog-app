@@ -27,4 +27,8 @@ class User < ApplicationRecord
   def show_recent_posts
     posts.order(created_at: :desc).first(3)
   end
+
+  def admin?
+    :role == 'admin'
+  end
 end

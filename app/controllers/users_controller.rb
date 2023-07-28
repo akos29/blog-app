@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
+  load_and_authorize_resource
   def index
     @users = User.all
   end
@@ -27,5 +28,9 @@ class UsersController < ApplicationController
   def show_recent_likes
     @user = User.find(params[:id])
     @likes = @user.likes.first(3)
+  end
+
+  def is?(requested_role )
+    self.role === requested.role.to_s
   end
 end
